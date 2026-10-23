@@ -1,0 +1,358 @@
+ /* navebar section */
+.navbar .nav-item {
+  position: relative;
+}
+.navbar .nav-item::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+}
+.navbar .nav-item:hover::after{
+    width: 90%;
+
+}
+.dropdown-sub{
+  position: relative;
+}
+.dropdown-sub > .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-top:0;
+}
+.dropdown-sub > .dropdown-menu.show {
+  display: block;
+}
+@media(max-width:991px){
+  .dropdown-sub > .dropdown-menu{
+    position: static;
+    margin-left: 15px;
+  }
+}
+
+/* header */
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/portfolio-hijab-calm-02.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#Home .header-caption h1{
+    font-size: 70px;
+  
+}
+#typing{
+    font-size: 36px;
+}
+.typed-cursor{
+  font-size: 32px;
+}
+/*=======================about section===================*/
+section{
+  padding-top: 100px;
+}
+#about img{
+  width: 200px;
+  height: auto;
+}
+#about h2{
+  position: relative;
+}
+#about h2::after{
+  content: '';
+  width:100px ;
+  height: 3px;
+  background-color: rgb(108, 108, 211);
+  position:absolute ;
+  top: 120%;
+  left: 0;
+}
+#services h2{
+  font-size: 50px;
+}
+#services .card .circle{
+  width: 100px;
+  height: 100px;
+  background-color:#fff;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+  border: 10px solid rgb(108, 108, 211);
+  transition: all 1s;
+}
+#services .card:hover .circle{
+border: 10px solid rgb(183, 147, 197);
+color: #fff;
+background-color:rgb(177, 140, 192);
+}
+#services h2{
+  position: relative;
+}
+#services h2::after{
+ content: '';
+  width:70px ;
+  height: 5px;
+  background-color: rgb(108, 108, 211);
+  position:absolute ;
+  top: 170%;
+  left:47%;
+}
+/*=======================background===================*/
+#background{
+    background-image:linear-gradient(rgba(148, 117, 152, 0.8),rgba(148, 117, 152, 0.8)), url(../images/portfolio-developer-background-01.png);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-attachment: fixed;
+}
+#background .container-fluid{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+#background .container-fluid div span{
+  width: 100px;
+  height: 100px; 
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 10px solid rgb(207, 190, 212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#background .container-fluid div i{
+  color: rgb(207, 190, 212);
+  font-size: 32px;
+}
+#background .container-fluid div {
+  text-align: center;
+  color: rgb(243, 241, 244);
+}
+/*=====================================portfolio====================================*/
+#portfolio h2{
+  position: relative;
+  font-size: 50px;
+
+}
+#portfolio h2::after{
+ content: '';
+  width:70px ;
+  height: 5px;
+  background-color: rgb(108, 108, 211);
+  position:absolute ;
+  top: 190%;
+  left:47%;
+}
+#portfolio .card i{
+  color: rgb(108, 108, 211);
+}
+#portfolio .card .port{
+  color: rgb(108, 108, 211);
+}
+.card img, .work-img img{
+  transition: transform 1s ease;
+}
+.card:hover img, .work-img:hover img{
+  transform: scale(1.3);
+}
+.card{
+  overflow: hidden;
+}
+
+/* ==============================testimonial============================== */
+#carousel{
+  background-image:linear-gradient(rgba(148, 117, 152, 0.8),rgba(148, 117, 152, 0.8)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+   padding: 140px 0;
+   margin-top: 50px;
+   text-align: center;
+}
+.testimonial-img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.carousel-indicators [button],.carousel-indicators [data-bs-target]{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.carousel-indicators{
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* ==================================blog============================= */
+#blog{
+  margin-bottom: 80px;
+}
+#blog h2{
+  position: relative;
+  font-size: 50px;
+
+}
+#blog h2::after{
+ content: '';
+  width:70px ;
+  height: 5px;
+  background-color: rgb(108, 108, 211);
+  position:absolute ;
+  top: 190%;
+  left:50%;
+  transform: translateX(-50%);
+}
+#blog .card2{
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+ position: relative;
+ box-shadow: 0 4px 4px rgba(0,0,0,0.7);
+ overflow: hidden;
+}
+#blog .card-img-wrap{
+  position: relative;
+}
+#blog .card-img-wrap img{
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .catigory{
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  background-color:rgb(108, 108, 211) ;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 2;
+}
+#blog .card-foot{
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+}
+#blog .pro-img{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+#blog .card-title a{
+  color: #212529;
+  text-decoration: none;
+}
+#blog h5 a:hover{
+  color: rgb(108, 108, 211) ;
+}
+#blog .pro{
+  text-decoration: none;
+}
+/* ==========================================contact========================= */
+#contact{
+   background-image:linear-gradient(rgba(148, 117, 152, 0.8),rgba(148, 117, 152, 0.8)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-attachment: fixed;
+}
+.title::after{
+ content: '';
+  width:40px ;
+  height: 3px;
+  background-color: rgb(108, 108, 211);
+  position:absolute ;
+  left:0;
+  bottom: 0;
+}
+.contact-section .form-control{
+  border-radius: 0;
+  border: 1px solid #dadfe4;
+  padding: 12px;
+  font-size: 14px;
+}
+.contact-section .form-control:focus{
+  box-shadow: none;
+  border-color:rgb(108, 108, 211) ;
+}
+.btn{
+  background-color: rgb(108, 108, 211) ;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.btn:hover{
+  color: rgb(108, 108, 211) ;
+  background-color: #d0c7d1;
+}
+.contact-info i{
+  color:  rgb(108, 108, 211);
+}
+.social-icons{
+  display: flex;
+  gap: 15px;
+}
+.social-icon{
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgb(108, 108, 211) ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(108, 108, 211) ;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+.social-icon:hover{
+  color: #fff;
+  background-color: rgb(108, 108, 211) ;
+}
+
+
+.footer{
+  background-color: rgba(91, 64, 93, 0.8);
+  font-size: 14px;
+}
+.footer strong{
+  color: #fff;
+}
+.back-to-top{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0; 
+  right: 15px;
+  bottom: 15px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color:rgb(184, 167, 185) ;
+  background-color: rgb(108, 108, 211) ;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 24px;
+}
+.back-to-top i{
+  font-size: 24px;
+}
+.back-to-top.active{
+  visibility: visible;
+  opacity: 1;
+}
